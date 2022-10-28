@@ -1,0 +1,6 @@
+{
+    "BASE_URL": "https://api.github.com", 
+    "SEARCH_URI": "search/repositories",
+    "PAGE_SIZE" : 8,
+    "RESULTS_PER_PAGE" : 80
+}
