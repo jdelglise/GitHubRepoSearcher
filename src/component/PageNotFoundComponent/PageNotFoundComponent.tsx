@@ -1,9 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-
-export function PageNotFoundComponent () {
-
+export function PageNotFoundComponent() {
   return (
     <div className="container max-w-full flex-grow bg-white/[.85] dark:bg-slate-800 text-slate-900 dark:text-white overflow-auto">
       <div className="grid grid-rows-3 gap-4 place-items-center">

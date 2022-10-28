@@ -1,15 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import './App.css';
-import { FooterComponent } from './component/FooterComponent/FooterComponent';
-import { HeaderComponent } from './component/HeaderComponent/HeaderComponent';
-import {BrowserRouter,Routes, Route} from "react-router-dom";
-import { AboutComponent } from './component/AboutComponent/AboutComponent';
-import { HomeComponent } from './component/HomeComponent/HomeComponent';
-import { PageNotFoundComponent } from './component/PageNotFoundComponent/PageNotFoundComponent';
-
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import { FooterComponent } from "./component/FooterComponent/FooterComponent";
+import { HeaderComponent } from "./component/HeaderComponent/HeaderComponent";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { AboutComponent } from "./component/AboutComponent/AboutComponent";
+import { HomeComponent } from "./component/HomeComponent/HomeComponent";
+import { PageNotFoundComponent } from "./component/PageNotFoundComponent/PageNotFoundComponent";
 
 export function App() {
-
   return (
     <div className="container max-w-full flex flex-col h-screen">
       <BrowserRouter>
@@ -22,7 +20,6 @@ export function App() {
         <FooterComponent></FooterComponent>
       </BrowserRouter>
     </div>
- 
   );
 }
 
