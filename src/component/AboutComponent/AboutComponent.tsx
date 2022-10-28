@@ -3,7 +3,7 @@ import About from './ABOUT.md';
 import ReactMarkdown from "react-markdown";
 import remarkGfm from 'remark-gfm'
 
-export function AboutComponent() {
+export function AboutComponent () {
 
   const [content, setContent] = useState("");
 
@@ -16,7 +16,7 @@ export function AboutComponent() {
 
   return (
     <div className="container max-w-full flex-grow px-10 bg-white/[.85] dark:bg-slate-800 text-slate-900 dark:text-white overflow-auto">
-      <ReactMarkdown children={content} remarkPlugins={[remarkGfm]} />
+      <ReactMarkdown children={ content } remarkPlugins={ [remarkGfm] } />
     </div>
   );
 }

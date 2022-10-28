@@ -7,14 +7,14 @@
 
 ## Packages
 
-|package|link|
-|-|-|
-|tailwindcss|https://tailwindcss.com/docs/guides/create-react-app|
-|typescript|https://create-react-app.dev/docs/adding-typescript/|
-|react-router|npm install react-router-dom --save|
-|axios|npm install axios|
-|react-markdown|npm install react-markdown|
-|react-error-boundary|npm install react-error-boundary|
+| package              | link                                                 |
+| -------------------- | ---------------------------------------------------- |
+| tailwindcss          | https://tailwindcss.com/docs/guides/create-react-app |
+| typescript           | https://create-react-app.dev/docs/adding-typescript/ |
+| react-router         | npm install react-router-dom --save                  |
+| axios                | npm install axios                                    |
+| react-markdown       | npm install react-markdown                           |
+| react-error-boundary | npm install react-error-boundary                     |
 
 # Project configuration
 
