@@ -27,7 +27,7 @@ export function HeaderComponent() {
           </p>
         </div>
       </Link>
-      <div className="absolute right-0 w-20 mr-10">
+      <div className="absolute top-8 right-0 h-20 w-20 mr-10">
         {/*Previous version with simple toggle switch
           <label htmlFor="default-toggle" className="inline-flex relative items-center cursor-pointer self-end">
           <input type="checkbox" value="" id="default-toggle" className="sr-only peer" onClick={() => isDark ? setDarkMode(false) : setDarkMode(true) } />

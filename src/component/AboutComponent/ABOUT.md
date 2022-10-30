@@ -14,7 +14,6 @@
 | react-router         | npm install react-router-dom --save                  |
 | axios                | npm install axios                                    |
 | react-markdown       | npm install react-markdown                           |
-| react-error-boundary | npm install react-error-boundary                     |
 
 # Project configuration
 

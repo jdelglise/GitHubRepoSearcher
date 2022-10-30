@@ -3,7 +3,6 @@ import React from "react";
 interface searchProp {
   searchString: string;
   searchHandler: (arg: string) => void;
-  disable: boolean;
 }
 
 export function SearchBarComponent(props: searchProp) {
@@ -28,7 +27,6 @@ export function SearchBarComponent(props: searchProp) {
           </svg>
         </div>
         <input
-          disabled={props.disable}
           type="search"
           onChange={(e) =>
             e.target.value.length >= 4

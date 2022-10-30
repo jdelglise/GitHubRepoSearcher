@@ -19,7 +19,7 @@ export function GitHubRepoCardComponent(props: gitHubRepoCardProp) {
   return (
     <div className="flex flex-col w-full bg-white dark:bg-slate-800 dark:border-gray-700 items-center">
       <div className="w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-slate-800 dark:border-gray-700">
-        <div className="flex flex-col items-center pb-10">
+        <div className="flex flex-col items-center pt-5 pb-5">
           <img
             className="mb-3 w-12 h-12 rounded-full shadow-lg"
             src={props.imgURL}
