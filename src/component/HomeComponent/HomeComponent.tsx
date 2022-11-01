@@ -60,7 +60,7 @@ export function HomeComponent() {
         });
     }
     return () => {
-      //cleanup function
+      //cleanup function, could also have used AbortController instead of boolean
       isCanceled = true;
     };
   }, [searchString, apiPage]);

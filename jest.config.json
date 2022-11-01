@@ -1,0 +1,14 @@
+{
+    "testEnvironment": "jsdom",
+    "preset" : "ts-jest",
+    "moduleNameMapper": {
+        "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js",
+        "\\.(md)$": "<rootDir>/__mocks__/styleMock.js",
+        "react-markdown": "<rootDir>/__mocks__/markdown.js",
+        "axios": "<rootDir>/__mocks__/markdown.js",
+        "remark-gfm": "<rootDir>/__mocks__/markdown.js"
+      },
+    "transformIgnorePatterns": [
+        "<rootDir>/node_modules/(?!axios)"
+    ]
+}

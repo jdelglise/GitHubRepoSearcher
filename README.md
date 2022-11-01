@@ -14,7 +14,7 @@
 |react-router|npm install react-router-dom --save|
 |axios|npm install axios|
 |react-markdown|npm install react-markdown|
-
+| ts-jest              | npm install --save-dev jest typescript ts-jest @types/jest|
 
 # Project configuration
 
