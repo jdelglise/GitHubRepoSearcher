@@ -36,32 +36,35 @@ export function HomeComponent() {
   // Or if we need to fetch a new page from the API (apiPage)
   useEffect(() => {
     let isCanceled = false;
-    if (searchString.length > 3) {
-      setIsLoading(true);
-      axios
-        .get(searchEndpoint, {
-          params: {
-            q: searchString,
-            per_page: resultsPerPage,
-            page: apiPage,
-          },
-        })
-        .then((response) => {
-          if (!isCanceled) {
-            setApiResponse(response.data as GitHubResponseType);
-            setNbPage(response.data.total_count / pageSize - 1);
+    const getData = setTimeout(() => {
+      if (searchString.length > 3) {
+        setIsLoading(true);
+        axios
+          .get(searchEndpoint, {
+            params: {
+              q: searchString,
+              per_page: resultsPerPage,
+              page: apiPage,
+            },
+          })
+          .then((response) => {
+            if (!isCanceled) {
+              setApiResponse(response.data as GitHubResponseType);
+              setNbPage(response.data.total_count / pageSize - 1);
+              setIsLoading(false);
+            }
+          })
+          .catch((error) => {
+            setError(error);
             setIsLoading(false);
-          }
-        })
-        .catch((error) => {
-          setError(error);
-          setIsLoading(false);
-          console.log(error);
-        });
-    }
+            console.log(error);
+          });
+      }
+    }, 2000);
     return () => {
       //cleanup function, could also have used AbortController instead of boolean
       isCanceled = true;
+      clearTimeout(getData);
     };
   }, [searchString, apiPage]);
 
