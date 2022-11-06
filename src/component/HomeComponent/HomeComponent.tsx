@@ -118,6 +118,7 @@ export function HomeComponent() {
             currentTableData.map((item) => {
               return (
                 <GitHubRepoCardComponent
+                  key={item.id}
                   name={item.name}
                   startgazerCount={item.stargazers_count}
                   lastUpdate={item.updated_at}
